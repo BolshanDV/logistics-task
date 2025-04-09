@@ -7,15 +7,12 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AppFooter: typeof import('./components/AppFooter.vue')['default']
     DisplayValues: typeof import('./components/DisplayValues.vue')['default']
     EventList: typeof import('./components/EventList.vue')['default']
     FormInputFields: typeof import('./components/FormInputFields.vue')['default']
-    HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     LocalStorageState: typeof import('./components/LocalStorageState.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    SubmitButton: typeof import('./components/SubmitButton.vue')['default']
     Test: typeof import('./components/Test.vue')['default']
   }
 }
