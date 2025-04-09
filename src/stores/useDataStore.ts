@@ -11,7 +11,7 @@ export const useDataStore = defineStore('data', () => {
   const price = ref<number>(0);
   const qty = ref<number>(0);
   const counter = ref<number>(0);
-  const amount = computed<number>(() => price.value * qty.value);
+  const amount = ref<number>(0);
 
   const isLoading = ref<boolean>(false);
   const events = ref<string[]>([]);
